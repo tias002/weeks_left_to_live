@@ -1,0 +1,174 @@
+/* <a href='https://www.freepik.com/vectors/background'>Background vector created by BiZkettE1 - www.freepik.com</a> */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+*{
+    font-family:'Bangers','Serif';
+    margin:0;
+    padding:0;
+}
+
+
+body{
+    
+    background-image:url("1354.jpg") ;
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:100vh;
+    width:100vw;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    
+}
+.container{
+    text-align: center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    background-color: antiquewhite;
+    width:50vw;
+    height: 800px;
+    margin: 30px;
+    padding: 10px;
+    box-shadow: 20px 20px 50px rgb(0, 0, 0,0.8);
+    border-radius:70px;
+    background-color: rgba(255,255,255,0);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    overflow: hidden;
+    background-filter:blur(8px) ;
+    
+}
+.container h1{
+    text-shadow: 3px 3px 3px white;
+    font-weight: 200;
+    font-size:60px;
+
+}
+#pi{
+    text-shadow: 3px 3px 3px white;
+    font-size:30px;
+}
+.answer p{
+    font-size:30px;
+}
+
+#displayresult{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    background-color: rgb(0, 0, 0);
+    color: bisque;
+    height:160px;
+    width: 280px;
+    margin:10px;
+    padding: 10px;
+}
+#result{
+    font-size:3rem;
+    text-shadow: 3px 3px 3px rgb(116, 113, 113);
+    font-weight: 150;
+
+}
+#ageinput{
+    
+    width:100%;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-width:3px;
+    background-color:rgb(255, 197, 122);
+    padding: 10px;
+    margin:10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+
+}
+#ageinput::placeholder{
+    color:rgb(0, 0, 0);
+}
+#ageinput:focus{
+  outline: none;
+  background-color:rgba(0, 0, 0, 0.877);
+  transform: scale(1.05);
+  
+}
+#ageinput:focus::placeholder{
+    color: white;
+    
+  }
+.button{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    
+}
+.button .refresh{
+    display:none;
+}
+.btn{
+    padding:10px;
+    width: 200px;
+    margin: 5px;
+    font-size: 20px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-width:3px;
+    background-color: rgba(255, 123, 0, 0.747);
+    transition:background-color 0.3s;
+}
+.btn:hover{
+    cursor:pointer;
+    background-color: rgb(0, 0, 0);
+    color:white;
+}
+.btn:active{
+    transform: scale(0.95);
+
+}
+.alert{
+    display:none;
+}
+.alert2{
+    display:none;
+}
+.answer{
+    display:none;
+}
+.alert.active{
+    display:block;
+}
+.alert2.active{
+    display:block;
+}
+.answer.active{
+    display:block;
+}
+@media(max-width: 800px)
+{
+    .container{
+        width:60vw;
+    }
+
+}
+@media(max-width: 600px)
+{
+    .container{
+        width:80vw;
+    }
+    .container h1{
+        font-size:30px;
+    }
+
+}
+@media(max-width: 300px)
+{
+    .container{
+        width:90vw;
+    }
+
+
+}
